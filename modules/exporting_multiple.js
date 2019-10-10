@@ -1,4 +1,6 @@
-// exporting two statements or more from a module
+// exporting multiple statements from a module
+// ------------------------------------------- //
+
 const sum = (num1, num2) => num1 + num2;
 const PI = 3.14;
 class Employee {
