@@ -34,7 +34,7 @@ fs.mkdir('folder2', (err) => {
                 console.log(err);
             else
                 console.log('the file example.txt created successfully');
-        })
+        });
     }
 });
 
@@ -74,7 +74,7 @@ fs.mkdir('folder3', (err) => {
     }
 });
 
-// deleting a folder with multiple files inside it using the 'readdir' method that takes 2 params
+// deleting a folder with multiple files inside it using the 'readdir' method that read the directory files and takes 2 params
 // 1st param: err, 2nd param: an array of the list of files inside the folder
 // to delete them all we loop over the file's array and delete them individually
 // and then delete the folder

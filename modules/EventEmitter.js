@@ -10,7 +10,7 @@ const myEventEmitter = new EventEmitter();
 // attaching methods to the EventEmitter
 // the method 'on' takes 2 arguments: name of the event, function to be executed when the event occurs
 myEventEmitter.on('add', (num1, num2) => {
-    console.log('add even has occurred');
+    console.log('add event has occurred');
     console.log(num1 + num2);
 });
 

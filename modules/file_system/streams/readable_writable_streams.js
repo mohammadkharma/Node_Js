@@ -7,15 +7,15 @@
 // importing file system (fs)
 const fs = require('fs');
 
-// creating a readable stream and passing to it the file's name we want to read and encoding type
+// creating a readable stream and passing to it the file's name we want to read and the encoding type
 const readStream = fs.createReadStream('./example.txt', 'utf8');
 
-// creating a writable stream and passing to it the file name we want to create and write in it
+// creating a writable stream and passing to it the file name we want to create and send the readable data to
 const writeStream = fs.createWriteStream('./example2.txt');
 
 // attaching 'data' event to the readable stream that is invoked every time we receive a chunk of data
 // the callback func takes the chunk data as a param
-// then we are sending every chunk to the write stream to write it by using the method 'write'
+// then sending every chunk through the 'writeStream' by using the method 'write' and passing to it what to write
 readStream.on('data', (chunk) =>{
     writeStream.write(chunk);
 });

@@ -24,7 +24,7 @@ myReadline.question(`What is ${num1} + ${num2}? \n`, (userInput) => {
     }
     else { // reacting to wrong answer
         myReadline.setPrompt('Incorrect! please try again \n'); // setting a prompt
-        myReadline.prompt(); // calling the prompt method
+        myReadline.prompt(); // invoking the prompt method
 
         // listening to the userInput again after the prompt, using 'line' event
         // this will cause a loop since the 'line' event will keep executing till the user enter the right input
@@ -36,10 +36,8 @@ myReadline.question(`What is ${num1} + ${num2}? \n`, (userInput) => {
                 myReadline.setPrompt(`${userInput} is incorrect!! \n`);
                 myReadline.prompt();
             }
-
-        })
+        });
     }
-
 });
 
 // since the readline is an instance of the EventEmitter class, we can control it's events

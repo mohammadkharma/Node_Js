@@ -5,7 +5,7 @@
 const fs = require('fs');
 
 // creating a file using the writeFile method that takes 3 params
-// 1st param: name of the file, 2nd param: content of the file, 3rd param: callback func with 'err' as param
+// 1st param: name of the file, 2nd param: content of the file, 3rd param: callback func with 'err' as it's param
 fs.writeFile('fs_example.txt', 'this file is created by fs', (err) => {
     if (err)
         console.log(err);
